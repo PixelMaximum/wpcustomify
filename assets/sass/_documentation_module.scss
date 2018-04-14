@@ -167,6 +167,48 @@
             background: #F9F9F9;
             display: block;
         }
+        .entry-content {
+            blockquote {
+                margin-left: 0px;
+                margin-right: 0px;
+                border-left-color: #c6c8ca;
+                background:        #d6d8d9;
+                padding:           0.5rem 0.5rem 0.5rem 1.5rem;
+                font-style:        italic;
+                color: #1b1e21;
+
+                &.c_note {
+                    border-left-color: #c3e6cb;
+                    background:        #d4edda;
+                    font-style:        normal;
+                    color: #155724;
+                    a {
+                        color: #155724;
+                        font-weight: bold;
+                    }
+                }
+                &.c_warning {
+                    border-left-color: #f5c6cb;
+                    background:        #f8d7da;
+                    font-style:        normal;
+                    color: #721c24;
+                    a {
+                        color: #721c24;
+                        font-weight: bold;
+                    }
+                }
+                &.c_tip {
+                    font-style:        normal;
+                    color: #856404;
+                    background-color: #fff3cd;
+                    border-left-color: #ffeeba;
+                    a {
+                        color: #856404;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
     }
 }
 

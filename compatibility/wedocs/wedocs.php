@@ -142,3 +142,15 @@ function wpcustomify_wedocs_ajax_search_filter( $args = array() ){
 add_filter( 'searchwp_live_search_query_args', 'wpcustomify_wedocs_ajax_search_filter' );
 
 
+// Add callout shortcode.
+function wpcustomify_callout_shortcode( $atts, $html = '', $shortcode = 'c_note' ) {
+	return "<blockquote class=\"{$shortcode}\"><p>{$html}</p></blockquote>";
+}
+function wpcustomify_add_callout_shortcodes() {
+	add_shortcode( 'c_note', 'wpcustomify_callout_shortcode' );
+	add_shortcode( 'c_warning', 'wpcustomify_callout_shortcode' );
+	add_shortcode( 'c_tip', 'wpcustomify_callout_shortcode' );
+}
+add_action( 'init', 'wpcustomify_add_callout_shortcodes' );
+
+

@@ -1,6 +1,6 @@
 <div id="page-titlebar" class="page-titlebar">
     <div class="page-titlebar-inner customify-container">
-        <h1 class="titlebar-title h3">Customify Documentation</h1>
+        <h1 class="titlebar-title h3">Documentation</h1>
         <div class="titlebar-tagline">Everything you need to get started</div>
         <div class="wedocs-header-search">
             <form role="search" method="post" class="search-form wedocs-search-form"

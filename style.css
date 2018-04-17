@@ -156,9 +156,8 @@ Text Domain:	 wpcustomify
   border: 1px solid #eeeeee;
   margin-top: 20px;
   margin-bottom: 30px;
-  padding: 25px;
+  padding: 20px;
   height: auto;
-  background: #F9F9F9;
   display: block;
 }
 .wedocs-single-wrap .wedocs-single-content .entry-content blockquote {
@@ -444,4 +443,21 @@ Text Domain:	 wpcustomify
   .wedocs-single-wrap .wedocs-single-content footer.entry-footer.wedocs-entry-footer time {
     float: none;
   }
+}
+/* GravityForms suppport and stype */
+.gforms_section .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  padding: 11px;
+}
+.gforms_section .gform_wrapper textarea {
+  padding: 20px;
+}
+.gforms_section .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gforms_section .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gforms_section .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+  margin-top: 0px;
+}
+.gforms_section .gform_wrapper .gfield_radio li label {
+  margin: 2px 0 0 7px;
+}
+.gforms_section .gform_wrapper .top_label .gfield_label {
+  font-size: 18px;
+  font-weight: 500;
 }

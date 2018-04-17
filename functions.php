@@ -44,3 +44,9 @@ if ( is_readable( $wedocs_file ) ) {
 	require_once $wedocs_file;
 }
 
+// Gravity Forms
+$gforms_file = trailingslashit( get_stylesheet_directory() ) . 'compatibility/gravity_forms.php';
+if ( is_readable( $gforms_file ) ) {
+	require_once $gforms_file;
+}
+

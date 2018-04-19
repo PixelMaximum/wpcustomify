@@ -6,7 +6,7 @@
     }
 
     .gform_wrapper textarea {
-        padding: 20px;
+        padding: 15px;
     }
 
     .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
@@ -18,7 +18,13 @@
     }
 
     .gform_wrapper .top_label .gfield_label {
-        font-size: 18px;
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+        font-size: inherit;
+    }
+    strong {
         font-weight: 500;
     }
 }

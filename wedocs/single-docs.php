@@ -76,7 +76,7 @@ if ( empty( $post->post_parent ) ) {
                             <footer class="entry-footer wedocs-entry-footer">
                                 <span class="wedocs-help-link wedocs-hide-print wedocs-hide-mobile">
                                         <i class="fa fa-envelope"></i>
-                                        Still stuck? Check other <a href="#">articles</a>, or open a <a href="#">support ticket</a>.
+                                        Still stuck? Check other <a href="https://wpcustomify.com/help/documentation/">articles</a>, or open a <a href="https://wpcustomify.com/contact/">support ticket</a>.
                                 </span>
                                 <?php if ( wedocs_get_option( 'email', 'wedocs_settings', 'on' ) == 'on' ): ?>
                                     <span class="wedocs-help-link wedocs-hide-print wedocs-hide-mobile">

@@ -40,13 +40,13 @@ function wpcustomify_enqueue_styles() {
 
 // Wedocs (Inspiration from freemius guide: https://freemius.com/blog/build-knowledge-base-documentation )
 $wedocs_file = trailingslashit( get_stylesheet_directory() ) . 'compatibility/wedocs/wedocs.php';
-if ( is_readable( $wedocs_file ) ) {
+if ( is_readable( $wedocs_file ) && class_exists('WeDocs') ) {
 	require_once $wedocs_file;
 }
 
 // Gravity Forms
 $gforms_file = trailingslashit( get_stylesheet_directory() ) . 'compatibility/gravity_forms.php';
-if ( is_readable( $gforms_file ) ) {
+if ( is_readable( $gforms_file ) && class_exists('GFForms') ) {
 	require_once $gforms_file;
 }
 

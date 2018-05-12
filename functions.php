@@ -50,11 +50,3 @@ if ( is_readable( $gforms_file ) && class_exists('GFForms') ) {
 	require_once $gforms_file;
 }
 
-function customify_wedocs_layout( $layout ){
-
-    if ( is_singular( 'docs' ) ) {
-        return 'content';
-    }
-    return $layout;
-}
-add_filter( 'customify_get_layout', 'customify_wedocs_layout' ) ;

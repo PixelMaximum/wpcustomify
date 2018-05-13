@@ -72,7 +72,7 @@
                     padding: 6px 10px 6px 0px;
                     text-decoration: none;
                     color: #444444;
-                    font-size: 17px;
+                    font-size: 19px;
                 }
                 ul.children {
                     list-style: none;
@@ -83,7 +83,7 @@
                     display: none;
                     a {
                         padding-left: 20px;
-                        font-size: 15px;
+                        font-size: 17px;
                     }
                 }
             }
@@ -96,15 +96,15 @@
             &>li.current_page_item,
             &>li.current_page_parent {
                 &>a {
-                    color: #007ee5;
+                    color: #0cb4ce;
                 }
                 ul.children {
                     display: block;
                 }
                 li.current_page_item {
                     &>a {
-                        border-left: 2px solid #007ee5;
-                        color: #007ee5;
+                        border-left: 2px solid #0cb4ce;
+                        color: #0cb4ce;
                         font-weight: 500;
                     }
                 }

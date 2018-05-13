@@ -11,6 +11,28 @@ Text Domain:	 wpcustomify
 /*
     Add your custom styles here
 */
+body, button, input, optgroup, select, textarea {
+  font-family: "din-2014",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
+  font-family: "din-2014",sans-serif;
+}
+
+/* Title Bar */
+#page-titlebar {
+  border-bottom: none;
+  padding: 60px 0 60px;
+}
+#page-titlebar .titlebar-title {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+}
+#page-titlebar .titlebar-tagline {
+  font-size: 20px;
+}
+
 /* Single Docs */
 .single-docs .site-content {
   background: #fafafa;
@@ -81,7 +103,7 @@ Text Domain:	 wpcustomify
   padding: 6px 10px 6px 0px;
   text-decoration: none;
   color: #444444;
-  font-size: 17px;
+  font-size: 19px;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children {
   list-style: none;
@@ -93,20 +115,20 @@ Text Domain:	 wpcustomify
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list li ul.children a {
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 17px;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li a {
   font-weight: 400;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent > a {
-  color: #007ee5;
+  color: #0cb4ce;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent ul.children {
   display: block;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent li.current_page_item > a {
-  border-left: 2px solid #007ee5;
-  color: #007ee5;
+  border-left: 2px solid #0cb4ce;
+  color: #0cb4ce;
   font-weight: 500;
 }
 .wedocs-single-wrap .wedocs-single-content {

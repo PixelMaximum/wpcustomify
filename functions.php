@@ -60,3 +60,4 @@ function customify_wedocs_layout( $layout ){
     return $layout;
 }
 add_filter( 'customify_get_layout', 'customify_wedocs_layout' ) ;
+

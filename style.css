@@ -489,3 +489,122 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
 .gforms_section strong {
   font-weight: 500;
 }
+
+/* EDD Style */
+.page-template-edd_my_account .site-content {
+  background: #fafafa;
+}
+.page-template-edd_my_account #page-titlebar {
+  background: #00438b;
+}
+.page-template-edd_my_account #page-titlebar .titlebar-title {
+  color: #FFF;
+}
+.page-template-edd_my_account #page-titlebar .titlebar-tagline {
+  color: rgba(255, 255, 255, 0.72);
+}
+.page-template-edd_my_account #main, .page-template-edd_my_account #sidebar-primary, .page-template-edd_my_account #sidebar-secondary {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .page-template-edd_my_account #main, .page-template-edd_my_account #sidebar-primary, .page-template-edd_my_account #sidebar-secondary {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.my-account-wrapper .my-account-sidebar {
+  float: left;
+  width: 25%;
+}
+.my-account-wrapper .my-account-sidebar .account-tabs {
+  list-style: none;
+  margin-left: 0px;
+}
+.my-account-wrapper .my-account-sidebar .account-tabs li a {
+  display: block;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eaeaea;
+  color: #6d7785;
+}
+.my-account-wrapper .my-account-sidebar .account-tabs li a.active {
+  color: #0cb4ce;
+}
+.my-account-wrapper .my-account-sidebar .account-tabs li:first-of-type a {
+  border-top: 1px solid #eaeaea;
+}
+.my-account-wrapper .my-account-sidebar .welcome-area h4 {
+  font-size: 20px;
+}
+.my-account-wrapper .my-account-sidebar .welcome-area p {
+  font-size: 17px;
+}
+.my-account-wrapper .my-account-main {
+  float: right;
+  width: 70%;
+}
+.my-account-wrapper .my-account-main .account-tabs-group {
+  margin-top: -10px;
+}
+
+#edd-purchase-button, .edd-submit, input[type="submit"].edd-submit {
+  border: none;
+  padding: 8px 35px;
+  background: #ffa800;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#edd-purchase-button:hover, .edd-submit:hover, input[type="submit"].edd-submit:hover {
+  box-shadow: inset 0 0 0 120px rgba(0, 0, 0, 0.1);
+}
+
+.edd-login-wrapper {
+  max-width: 500px;
+  padding: 40px;
+  background: #FFF;
+  margin: 0 auto;
+}
+@media screen and (max-width: 568px) {
+  .edd-login-wrapper {
+    padding: 20px;
+  }
+}
+.edd-login-wrapper .edd_form, .edd-login-wrapper fieldset {
+  margin: 0px;
+}
+.edd-login-wrapper #edd_login_form legend {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  width: 100%;
+  color: #293341;
+}
+.edd-login-wrapper #edd_login_form label, .edd-login-wrapper .edd-lost-password a {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.edd-login-wrapper .edd-input {
+  display: block;
+  width: 100%;
+}
+.edd-login-wrapper .edd-lost-password {
+  margin-bottom: 0px;
+}
+.edd-login-wrapper .edd-lost-password a {
+  color: #6d7785;
+  text-decoration: underline;
+}
+.edd-login-wrapper .edd-lost-password a:hover {
+  color: #111111;
+}
+.edd-login-wrapper input[type="submit"].edd-submit {
+  width: 100%;
+  display: block;
+  padding: 10px 35px;
+}

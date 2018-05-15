@@ -33,6 +33,7 @@ add_filter( 'xmlrpc_methods', function ( $methods ) {
 // Enqueue child theme style
 add_action( 'wp_enqueue_scripts', 'wpcustomify_enqueue_styles' );
 function wpcustomify_enqueue_styles() {
+	wp_enqueue_style('wpcustomify-typekit', 'https://use.typekit.net/xlx8wfz.css');
 	wp_enqueue_style('wpcustomify-style', get_stylesheet_directory_uri() .'/style.css', array('customify-style'));
 }
 
@@ -59,3 +60,4 @@ function customify_wedocs_layout( $layout ){
     return $layout;
 }
 add_filter( 'customify_get_layout', 'customify_wedocs_layout' ) ;
+

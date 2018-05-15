@@ -518,6 +518,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   float: left;
   width: 25%;
 }
+.no-sidebar.my-account-wrapper .my-account-main{
+    width: 100%;
+    float: none;
+}
+
 .my-account-wrapper .my-account-sidebar .account-tabs {
   list-style: none;
   margin-left: 0px;

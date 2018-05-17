@@ -85,7 +85,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   background: none;
   border: none;
   font-size: 19px;
-  color: #ccc;
   padding: 4px;
 }
 .wedocs-single-wrap .wedocs-sidebar .wedocs-search-form .wedocs-search-input button:hover {
@@ -121,14 +120,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   font-weight: 400;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent > a {
-  color: #0cb4ce;
+  color: #254899;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent ul.children {
   display: block;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent li.current_page_item > a {
-  border-left: 2px solid #0cb4ce;
-  color: #0cb4ce;
+  border-left: 2px solid #254899;
+  color: #254899;
   font-weight: 500;
 }
 .wedocs-single-wrap .wedocs-single-content {
@@ -141,6 +140,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   margin-bottom: 10px;
   margin-left: 0;
   padding-left: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 .wedocs-single-wrap .wedocs-single-content .wedocs-breadcrumb li {
   display: inline;
@@ -229,6 +232,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   margin-bottom: 10px;
   position: relative;
 }
+.wedocs-header-search .wedocs-search-input button span {
+  color: #FFF;
+}
 .wedocs-header-search .wedocs-search-form {
   position: relative;
   margin-bottom: 0px;
@@ -257,15 +263,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   /* Firefox */
 }
 .wedocs-header-search .wedocs-search-form input:focus {
-  border-color: #00438b;
+  border-color: #254899;
 }
 .wedocs-header-search .wedocs-search-form button {
-  background: #00438b;
+  background: #254899;
   border-radius: 0 5px 5px 0;
   height: 47px;
   vertical-align: top;
   display: inline;
-  border: 1px solid #00438b;
+  border: 1px solid #254899;
   font-size: 20px;
   padding: 0 20px;
   box-sizing: border-box;
@@ -491,11 +497,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
 }
 
 /* EDD Style */
-.page-template-edd_my_account .site-content {
-  background: #fafafa;
+.page-template-edd_my_account .site-content #edd_user_history td, .page-template-edd_my_account .site-content #edd_user_history th {
+  padding: 11px 20px;
 }
 .page-template-edd_my_account #page-titlebar {
-  background: #00438b;
+  background: #254899;
 }
 .page-template-edd_my_account #page-titlebar .titlebar-title {
   color: #FFF;
@@ -529,7 +535,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   color: #6d7785;
 }
 .my-account-wrapper .my-account-sidebar .account-tabs li a.active {
-  color: #0cb4ce;
+  color: #254899;
 }
 .my-account-wrapper .my-account-sidebar .account-tabs li:first-of-type a {
   border-top: 1px solid #eaeaea;
@@ -545,7 +551,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   width: 70%;
 }
 .my-account-wrapper .my-account-main .account-tabs-group {
-  margin-top: -10px;
+  margin-top: -8px;
 }
 
 #edd-purchase-button, .edd-submit, input[type="submit"].edd-submit {
@@ -556,6 +562,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
+  border-radius: 2px;
 }
 #edd-purchase-button:hover, .edd-submit:hover, input[type="submit"].edd-submit:hover {
   box-shadow: inset 0 0 0 120px rgba(0, 0, 0, 0.1);
@@ -607,4 +614,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   width: 100%;
   display: block;
   padding: 10px 35px;
+}
+
+.edd_sl_table .edd_sl_license_key {
+  width: 100%;
+}
+
+#edd_profile_editor_form input[type=email], #edd_profile_editor_form input[type=number], #edd_profile_editor_form input[type=password], #edd_profile_editor_form input[type=text], #edd_profile_editor_form input[type=url], #edd_profile_editor_form textarea, #edd_profile_editor_form select {
+  display: block;
+  width: 100%;
+}
+#edd_profile_editor_form label {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }

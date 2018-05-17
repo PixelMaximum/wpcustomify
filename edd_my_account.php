@@ -53,11 +53,12 @@ get_header(); ?>
                         <p>Use the links below to navigate your account information.</p>
                     </div>
                     <ul class="account-tabs" data-tabgroup="account-tab-first">
-                        <li><a href="#purchases" class="<?php echo ( $current_tab == 'purchases' ) ? 'active' : ''; ?>">Purchases</a></li>
-                        <li><a href="#license-keys" class="<?php echo ( $current_tab == 'license-keys' ) ? 'active' : ''; ?>">License Keys</a></li>
-                        <li><a href="#subscriptions" class="<?php echo ( $current_tab == 'subscriptions' ) ? 'active' : ''; ?>">Subscriptions</a></li>
-                        <li><a href="#downloads" class="<?php echo ( $current_tab == 'downloads' ) ? 'active' : ''; ?>">Downloads</a></li>
-                        <li><a href="#profile" class="<?php echo ( $current_tab == 'profile' ) ? 'active' : ''; ?>">Profile</a></li>
+                        <li><a href="#purchases" class="account-tab <?php echo ( $current_tab == 'purchases' ) ? 'active' : ''; ?>">Purchases</a></li>
+                        <li><a href="#license-keys" class="account-tab <?php echo ( $current_tab == 'license-keys' ) ? 'active' : ''; ?>">License Keys</a></li>
+                        <li><a href="#subscriptions" class="account-tab <?php echo ( $current_tab == 'subscriptions' ) ? 'active' : ''; ?>">Subscriptions</a></li>
+                        <li><a href="#downloads" class="account-tab <?php echo ( $current_tab == 'downloads' ) ? 'active' : ''; ?>">Downloads</a></li>
+                        <li><a href="#profile" class="account-tab <?php echo ( $current_tab == 'profile' ) ? 'active' : ''; ?>">Profile</a></li>
+                        <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Log out &#187;</a></li>
                     </ul>
                 </div>
                 <?php } ?>
@@ -113,7 +114,7 @@ get_header(); ?>
                 var current_url = <?php echo json_encode( get_permalink() ); ?>;
                 jQuery('.account-tabs-group > div').hide();
                 jQuery('.account-tabs-group > div:first-of-type').show();
-                jQuery('.account-tabs a').click(function(e){
+                jQuery('.account-tabs a.account-tab').click(function(e){
                     e.preventDefault();
                     var $this = jQuery(this),
                         tabgroup = '#'+$this.parents('.account-tabs').data('tabgroup'),

@@ -112,6 +112,7 @@ get_header(); ?>
             <!-- Account Tab JS -->
             <script type="text/javascript">
                 var current_url = <?php echo json_encode( get_permalink() ); ?>;
+                var current_tab = <?php echo json_encode( $current_tab ); ?>;
                 jQuery('.account-tabs-group > div').hide();
                 jQuery('.account-tabs-group > div:first-of-type').show();
                 jQuery('.account-tabs a.account-tab').click(function(e){
@@ -128,6 +129,13 @@ get_header(); ?>
                     jQuery(tabgroup).children('div').hide();
                     jQuery(target).show();
                 });
+
+                jQuery( document ).ready( function(){
+                    jQuery('.account-tabs-group').children('.account-tab-content').hide();
+                    jQuery('#'+current_tab).show();
+                } );
+
+
             </script>
 
 		<?php

@@ -28,7 +28,7 @@ get_header(); ?>
 
 
             $show_sidebar = true;
-            $current_tab = 'purchases';
+            $current_tab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : 'purchases';
             if ( isset( $_GET['action'] ) ) {
                 switch( $_GET['action'] ) {
                     case 'manage_licenses':
@@ -37,11 +37,13 @@ get_header(); ?>
                             $show_sidebar = false;
                         }
                         break;
+                        // ?action=update&subscription_id=2
+                    case 'update':
+                        if ( isset( $_GET['subscription_id'] ) ) {
+                            $current_tab = 'subscriptions';
+                        }
+                        break;
                 }
-            }
-
-            if ( isset( $_GET['tab'] ) ) {
-                $current_tab = sanitize_text_field( $_GET['tab'] );
             }
 
             ?>
@@ -73,6 +75,7 @@ get_header(); ?>
                                     assistance.</p>
                                 <?php
                             }
+                            $GLOBALS['_customify_tab'] = 'purchases';
                             echo apply_filters( 'the_content', '[purchase_history]' );
                             ?>
                         </div>
@@ -82,13 +85,17 @@ get_header(); ?>
                         <div id="license-keys" class="account-tab-content">
                             <h3>Manage your license keys</h3>
                             <p>Below you will find all license keys for you previous purchases. Use the <b>Manage Sites</b> links to authorize specific URLs for your license keys. Use the <b>Extend License</b> or <b>Renew License</b> links to adjust the terms of your license keys.</p>
-                            <?php echo do_shortcode('[edd_license_keys]'); ?>
+                            <?php
+                            $GLOBALS['_customify_tab'] = 'license-keys';
+                            echo do_shortcode('[edd_license_keys]'); ?>
                         </div>
 
                         <div id="subscriptions" class="account-tab-content">
                             <h3>Manage your subscriptions</h3>
                             <p>Use the tools below to view subscription details, manage all of your product subscriptions, and view invoices.</p>
-                            <?php echo do_shortcode( '[edd_subscriptions]' ); ?>
+                            <?php
+                            $GLOBALS['_customify_tab'] = 'subscriptions';
+                            echo do_shortcode( '[edd_subscriptions]' ); ?>
                         </div>
 
                         <div id="downloads" class="account-tab-content">
@@ -100,9 +107,15 @@ get_header(); ?>
                         <div id="profile" class="account-tab-content">
                             <h4>Edit your profile information</h4>
                             <p>Use the form below to edit the information saved in your user profile. Select information will be used to auto-complete the checkout form for your next purchase.</p>
-                            <?php echo do_shortcode('[edd_profile_editor]'); ?>
+                            <?php
+                            $GLOBALS['_customify_tab'] = 'profile';
+                            echo do_shortcode('[edd_profile_editor]'); ?>
                         </div>
-                        <?php } ?>
+                        <?php }
+
+                        unset( $GLOBALS['_customify_tab'] );
+
+                        ?>
 
                     </div>
                 </div>
@@ -131,8 +144,23 @@ get_header(); ?>
                 });
 
                 jQuery( document ).ready( function(){
-                    jQuery('.account-tabs-group').children('.account-tab-content').hide();
-                    jQuery('#'+current_tab).show();
+                    if( jQuery('#'+current_tab).length > 0 ) {
+                        jQuery('.account-tabs-group').children('.account-tab-content').hide();
+                        jQuery('#'+current_tab).show();
+                    }
+
+
+                    function updateQueryStringParameter(uri, key, value) {
+                        var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+                        var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+                        if (uri.match(re)) {
+                            return uri.replace(re, '$1' + key + "=" + value + '$2');
+                        } else {
+                            return uri + separator + key + "=" + value;
+                        }
+                    }
+
+
                 } );
 
 

@@ -4,7 +4,7 @@
 // My Account stuffs
 
 // My Account Page
-.page-template-edd_my_account {
+.page-template-edd_my_account, .page-id-831 {
     .site-content {
         //background: #fafafa;
         #edd_user_history td, #edd_user_history th {
@@ -60,12 +60,17 @@
             }
         }
     }
+
     .my-account-main {
         float: right;
         width: 70%;
         .account-tabs-group {
             margin-top: -8px;
         }
+    }
+    &.no-sidebar .my-account-main {
+        float: none;
+        width: 100%;
     }
 }
 
@@ -83,6 +88,11 @@
     &:hover {
         box-shadow: inset 0 0 0 120px rgba(0,0,0,.1);
     }
+}
+button.edd-button.edd-stripe-add-new, button.edd-stripe-submit-update {
+    color: #FFF;
+    border-radius: 2px;
+    line-height: 1;
 }
 
 // Login Form
@@ -150,6 +160,92 @@
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 1px;
+    }
+}
+
+// Add site form
+#edd_sl_license_add_site_form {
+    span {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+// Checkout Page.
+.page-id-831 {
+    .site-content {
+        .customify-container {
+            max-width: 800px;
+        }
+    }
+}
+#edd_checkout_form_wrap fieldset {
+    //padding: 0px;
+    //border: none;
+}
+#edd_checkout_form_wrap legend {
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+    font-size: 23px;
+}
+#edd_checkout_form_wrap .edd-payment-icons {
+    margin-bottom: 20px;
+}
+#edd_checkout_form_wrap #edd_final_total_wrap {
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 23px;
+}
+#edd_purchase_submit {
+    .edd-submit {
+        width: 100%;
+        padding: 17px 35px;
+        font-size: 21px;
+    }
+}
+.edd_cart_remove_item_btn {
+    color: #999999;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+#edd_checkout_form_wrap fieldset#edd_cc_fields {
+    background: #fff;
+}
+#edd_checkout_form_wrap input[type=email],
+#edd_checkout_form_wrap input[type=password],
+#edd_checkout_form_wrap input[type=tel],
+#edd_checkout_form_wrap input[type=text],
+#edd_checkout_form_wrap .edd-select,
+#edd_checkout_form_wrap textarea {
+    width: 100%;
+    padding: 8px 10px;
+}
+#edd_checkout_form_wrap {
+    .edd-discount-code-field-wrap {
+        .edd-input {
+            width: auto;
+        }
+        input.edd-submit {
+            padding: 8.5px 15px;
+            margin-left: 5px;
+        }
+    }
+}
+#edd_checkout_form_wrap label {
+    font-weight: 400;
+}
+#edd_checkout_cart th {
+    font-weight: 600;
+}
+#edd_checkout_form_wrap {
+    #edd-payment-mode-wrap {
+        input[type=radio] {
+            position: relative;
+            top: -1px;
+        }
     }
 }
 

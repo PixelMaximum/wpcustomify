@@ -109,4 +109,6 @@ function customify_edd_sl_site_management_links( $payment_id, $purchase_data ) {
 remove_action( 'edd_purchase_history_row_end', 'edd_sl_site_management_links', 10, 2 );
 add_action( 'edd_purchase_history_row_end', 'customify_edd_sl_site_management_links', 15, 2 );
 
+//remove_action( 'edd_product_notes', 'edd_all_access_add_receipt_link', 10, 2 );
+
 

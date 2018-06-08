@@ -59,7 +59,6 @@ get_header(); ?>
                         <li><a href="#license-keys" class="account-tab <?php echo ( $current_tab == 'license-keys' ) ? 'active' : ''; ?>">License Keys</a></li>
                         <li><a href="#subscriptions" class="account-tab <?php echo ( $current_tab == 'subscriptions' ) ? 'active' : ''; ?>">Subscriptions</a></li>
                         <li><a href="#downloads" class="account-tab <?php echo ( $current_tab == 'downloads' ) ? 'active' : ''; ?>">Downloads</a></li>
-                        <li><a href="#all-downloads" class="account-tab <?php echo ( $current_tab == 'all-downloads' ) ? 'active' : ''; ?>">All Downloads</a></li>
                         <li><a href="#profile" class="account-tab <?php echo ( $current_tab == 'profile' ) ? 'active' : ''; ?>">Profile</a></li>
                         <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Log out &#187;</a></li>
                     </ul>
@@ -103,12 +102,6 @@ get_header(); ?>
                             <h3>Your download history</h3>
                             <p>Below you will find a complete history of your file downloads.</p>
                             <?php echo do_shortcode('[download_history]'); ?>
-                        </div>
-
-                        <div id="all-downloads" class="account-tab-content">
-                            <h3>Your download history</h3>
-                            <p>Below you will find a complete history of your file downloads.</p>
-                            <?php echo do_shortcode('[downloads all_access_customer_downloads_only="yes"]'); ?>
                         </div>
 
                         <div id="profile" class="account-tab-content">

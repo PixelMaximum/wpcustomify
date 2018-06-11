@@ -557,6 +557,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   float: none;
   width: 100%;
 }
+.my-account-wrapper .edd_sl_license_row input.edd_sl_license_key {
+  padding: 10px 15px;
+}
 
 #edd-purchase-button, .edd-submit, input[type="submit"].edd-submit {
   border: none;

@@ -120,14 +120,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   font-weight: 400;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent > a {
-  color: #254899;
+  color: #ee2762;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item ul.children, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent ul.children {
   display: block;
 }
 .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_ancestor li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_item li.current_page_item > a, .wedocs-single-wrap .wedocs-sidebar ul.doc-nav-list > li.current_page_parent li.current_page_item > a {
-  border-left: 2px solid #254899;
-  color: #254899;
+  border-left: 2px solid #ee2762;
+  color: #ee2762;
   font-weight: 500;
 }
 .wedocs-single-wrap .wedocs-single-content {
@@ -263,15 +263,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   /* Firefox */
 }
 .wedocs-header-search .wedocs-search-form input:focus {
-  border-color: #254899;
+  border-color: #ee2762;
 }
 .wedocs-header-search .wedocs-search-form button {
-  background: #254899;
+  background: #ee2762;
   border-radius: 0 5px 5px 0;
   height: 47px;
   vertical-align: top;
   display: inline;
-  border: 1px solid #254899;
+  border: 1px solid #ee2762;
   font-size: 20px;
   padding: 0 20px;
   box-sizing: border-box;
@@ -501,7 +501,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   padding: 11px 20px;
 }
 .page-template-edd_my_account #page-titlebar, .page-id-831 #page-titlebar {
-  background: #254899;
+  background: #ee2762;
+  background-image: linear-gradient(90deg, #282561 0%, #ee2762 100%);
 }
 .page-template-edd_my_account #page-titlebar .titlebar-title, .page-id-831 #page-titlebar .titlebar-title {
   color: #FFF;
@@ -535,7 +536,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3 {
   color: #6d7785;
 }
 .my-account-wrapper .my-account-sidebar .account-tabs li a.active {
-  color: #254899;
+  color: #ee2762;
 }
 .my-account-wrapper .my-account-sidebar .account-tabs li:first-of-type a {
   border-top: 1px solid #eaeaea;

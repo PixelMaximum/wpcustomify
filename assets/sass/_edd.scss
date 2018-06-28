@@ -12,7 +12,8 @@
         }
     }
     #page-titlebar {
-        background: #254899;
+        background: #ee2762;
+        background-image: linear-gradient(90deg, #282561 0%, #ee2762 100%);
         .titlebar-title {
             color: #FFF;
         }
@@ -43,7 +44,7 @@
                      border-bottom: 1px solid #eaeaea;
                      color: #6d7785;
                      &.active {
-                         color: #254899;
+                         color: #ee2762;
                      }
                  }
              }
